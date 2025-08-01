@@ -1,0 +1,99 @@
+.icones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--grafite), var(--carbono));
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+.icones > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--seda);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  min-width: 150px;
+}
+
+.icones > div::before {
+  content: attr(data-title);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.icones i {
+  font-size: 50px;
+  color: var(--toquio);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icones i:hover {
+  transform: scale(1.5);
+  color: var(--grafite);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--chumbo);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 7px;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+  font-family: var(--fonte-principal);
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+.habilidades h1 {
+  text-align: center;
+  color: white;
+}
+
+.svg-icon {
+  width: 50px;
+  height: 50px;
+  color: var(--toquio);
+  transition: transform 0.3s, color 0.3s;
+  fill: currentColor;
+}
+
+.svg-icon:hover {
+  transform: scale(1.5);
+  color: var(--grafite);
+}
+@media (max-width: 768px) {
+  .icones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icones > div {
+    width: 100%;
+    max-width: 300px;
+  }
+}

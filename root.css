@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  /* Fonte principal */
+  --fonte-principal: 'Mulish';
+
+  /* Tons escuros refinados */
+  --carbono: #1c1c1c;      /* Preto escuro neutro */
+  --chumbo: #2e2e2e;       /* Tom mais macio que o carbono */
+  --cafe: #2b1d1b;         /* Marrom escuro quente */
+  --grafite: #3b3b3b;      /* Tom intermediário escuro */
+  --toquio: #1a1f24;       /* Azul petróleo escurecido */
+  --seda: #252525;         /* Cinza escuro elegante */
+
+  /* Tons rosa
+  --rosa-clarissimo: #ffeef0;
+  --rosa-claro: #fdbdc4;
+  --rosa-medio: #fa87a1;
+  --rosa-escuro: #f8517f; */
+
+}
