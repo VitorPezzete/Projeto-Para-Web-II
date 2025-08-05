@@ -45,7 +45,7 @@
   display: inline-block;
 }
 
-.tooltip::after {
+/* .tooltip::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 115%;
@@ -67,7 +67,7 @@
 
 .tooltip:hover::after {
   opacity: 1;
-}
+} */
 
 .habilidades h1 {
   text-align: center;
