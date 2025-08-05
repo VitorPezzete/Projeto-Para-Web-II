@@ -19,7 +19,7 @@ html {
 
 .divisor {
   border: none;
-  border-top: 1px solid var(--grafite); /* substitui o rosa-claro */
+  border-top: 1px solid var(--grafite);
   width: 100%;
   margin: 2rem 0;
 }
