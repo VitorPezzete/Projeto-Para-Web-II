@@ -39,6 +39,11 @@
     text-align: center;
 }
 
+.projetos h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .projetos{
     margin: 1em;
 }
@@ -56,7 +61,7 @@
 
 .tag-tecnologia {
   display: inline-block;
-  background-color: var(--carbono);
+  background-color: var(--toquio);
   color: white;
   padding: 4px 10px;
   border-radius: 12px;
@@ -69,4 +74,14 @@
 
 .tag-tecnologia:hover {
   background-color: var(--chumbo);
+}
+
+@media (max-width: 768px) {
+  #projetos-container div {
+    max-width: 90%;
+  }
+
+  .projeto-imagem {
+    max-width: 100%;
+  }
 }
