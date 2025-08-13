@@ -1,0 +1,63 @@
+      <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js"></script>
+      
+  <script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { 
+      enable: true, 
+      zIndex: -10 
+    },
+    background: { 
+      color: "#100C08" 
+    },
+    particles: {
+      number: {
+        value: 55,
+        density: {
+          enable: true,
+          value_area: 800,
+        }
+      },
+      color: { 
+        value: "#F8F8F8" 
+      },
+      shape: { 
+        type: "circle" 
+      },
+      opacity: { 
+        value: 0.5 
+      },
+      size: { 
+        value: 3 
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "none",
+        random: false,
+        straight: false,
+        outMode: "bounce"
+      },
+      links: {
+        enable: true,
+        distance: 100,
+        opacity: 0.5,
+        color: "#F8F8F8",
+        width: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: { 
+          enable: true, 
+          mode: "repulse" 
+        }
+      },
+      modes: {
+        repulse: { 
+          distance: 100 
+        }
+      }
+    },
+    retina_detect: true,
+  });
+</script>
